@@ -1,5 +1,25 @@
 ## Credit System App
 
+##### Main entities:
+
+- Contract | Контракт
+- CreditApplication | Кредитная заявка
+- Item | Товар
+- Manufacturer | Производитель
+
+##### Test
+Currently, the Test task is deployd on the server.
+
+So, you can see available contracts by [this link](http://159.89.105.161/api/v1/contracts/)
+
+And get unique manufacturer identifiers adding contract id to url params [like this](http://159.89.105.161/api/v1/contracts/1)
+
+Also, you can add you own rows to the Entities by the admin panel which is temporary available [here](http://159.89.105.161/admin/) with credentials:
+
+```commandline
+user: john
+password: password123
+```
 
 ### Steps to reproduce
 Clone repo.

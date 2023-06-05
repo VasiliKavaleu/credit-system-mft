@@ -7,6 +7,8 @@ from credit_system.serializers import ContractListSerializer
 
 
 class ContractViewSet(viewsets.ViewSet):
+    """Get unique manufacturer through CreditApplication by path contracts/<contract_id>"""
+
     lookup_url_kwarg = "contract_id"
 
     def list(self, request):
