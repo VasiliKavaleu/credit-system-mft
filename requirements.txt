@@ -20,6 +20,9 @@ django==4.2
     # via
     #   -r requirements.in
     #   dj-database-url
+    #   djangorestframework
+djangorestframework==3.14.0
+    # via -r requirements.in
 filelock==3.12.0
     # via virtualenv
 gunicorn==20.1.0
@@ -42,6 +45,8 @@ pyproject-hooks==1.0.0
     # via build
 python-decouple==3.8
     # via -r requirements.in
+pytz==2023.3
+    # via djangorestframework
 pyyaml==6.0
     # via pre-commit
 sqlparse==0.4.4
