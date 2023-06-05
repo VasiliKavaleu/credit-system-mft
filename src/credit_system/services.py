@@ -1,4 +1,4 @@
-from typing import TypedDict
+from typing import TypedDict, List
 
 from django.contrib.postgres.aggregates import ArrayAgg
 from django.db.models import F
@@ -7,7 +7,7 @@ from credit_system.models import CreditApplication
 
 
 class UniqueManufacturerIds(TypedDict):
-    manufacturer_ids: list[int, ...]
+    manufacturer_ids: List[int]
 
 
 def get_manufacturer_ids_by_contract_number(contract_id: str) -> UniqueManufacturerIds:
